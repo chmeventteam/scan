@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5002;
 app.use(json());
 app.use(cors());
 
-connect('mongodb+srv://mayankpatekar17:mayankpatekar17@cluster0.2sjtvde.mongodb.net/?retryWrites=true&w=majority', {
+connect(process.env.DATABASE, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
