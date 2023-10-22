@@ -92,6 +92,9 @@ app.post('/api/enter',async(req,res)=>{
   }
 })
 
+app.get("/call",(req,res)=>{
+  res.json("scanning reload");
+})
 
 
 app.listen(PORT, () => {
